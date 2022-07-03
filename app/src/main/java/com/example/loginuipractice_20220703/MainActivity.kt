@@ -1,5 +1,6 @@
 package com.example.loginuipractice_20220703
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,9 +11,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        
+
+//        회원가입 창으로 이동
         signUpBtn.setOnClickListener {
-            Toast.makeText(this, "회원가입버튼 클릭" , Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "회원가입버튼 클릭" , Toast.LENGTH_SHORT).show()
+            // 비행기 티켓을 발권
+            val myIntent = Intent(this , SignUpActivity::class.java)
+
+            startActivity(myIntent)
         }
 //        로그인 로직실행
         loginBtn.setOnClickListener { 
