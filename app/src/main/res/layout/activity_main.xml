@@ -18,17 +18,19 @@
         android:layout_height="wrap_content"
         android:text="아이디"/>
     <EditText
+        android:id="@+id/idEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:imeOptions="actionNext"
-        android:hint="아이디"/>
+        android:hint="이메일 입력"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
         android:text="패스어드 입력"/>
     <EditText
+        android:id="@+id/passwordEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -51,12 +53,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:id="@+id/signUpBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="회원가입"/>
         <Button
             android:layout_width="0dp"
+            android:id="@+id/loginBtn"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="로그인"/>
