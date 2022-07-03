@@ -21,8 +21,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 //        로그인 로직실행
-        loginBtn.setOnClickListener { 
-            val id = idEdt.text.toString()
+        loginBtn.setOnClickListener {
+            val inputEmail = idEdt.text.toString()
+            val myIntent = Intent(this , MainActivity2::class.java)
+
+            myIntent.putExtra("email" , inputEmail )
+            startActivity(myIntent)
+         /*   val id = idEdt.text.toString()
             val password = passwordEdt.text.toString()
             if(id != "admin"){
                 Toast.makeText(this , "아이디가 잘못됐습니다." , Toast.LENGTH_SHORT).show()
@@ -32,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 }else{
                     Toast.makeText(this , "관리자님 환영합니다.." , Toast.LENGTH_SHORT).show()
                 }
-            }
+            }*/
         }
 
     }

@@ -5,6 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="15dp"
     tools:context=".SignUpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="이메일 입력"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="비밀번호"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="8자 이상 입력"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:imeOptions="actionNext"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="닉네임"/>
+
+    <EditText
+        android:id="@+id/nicknameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="닉네임 입력"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"/>
+
 
 </LinearLayout>
